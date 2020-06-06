@@ -32,7 +32,7 @@ add_action('wp_enqueue_scripts', 'ww_load_dashicons', 999);
  */
 
 function indieweb_publisher_footer_credits() {
-	$my_custom_footer = 'Made with ❤️ in 030, based on the <a href="https://github.com/dshanske/indieweb-publisher">Indieweb Publisher theme</a> ';
+	$my_custom_footer = 'Made with ❤️ in Utreg, based on the <a href="https://github.com/dshanske/indieweb-publisher">Indieweb Publisher theme</a> ';
 	return $my_custom_footer;
 }
 
