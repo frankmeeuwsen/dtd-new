@@ -564,11 +564,8 @@ if ( ! function_exists( 'indieweb_publisher_full_width_featured_image' ) ) :
 										</h2>
 									<?php endif; ?>
 									<?php if ( ! is_page() ) : ?>
-										<h3 class="entry-title-meta">
+										<h2 class="entry-title-meta">
 												<span class="entry-title-meta-author">
-													<a class="author-avatar" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-														<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
-													</a>
 													<?php
 													if ( ! indieweb_publisher_categorized_blog() ) {
 														echo indieweb_publisher_entry_meta_author_prefix() . ' ';
@@ -586,7 +583,7 @@ if ( ! function_exists( 'indieweb_publisher_full_width_featured_image' ) ) :
 												<?php indieweb_publisher_posted_on_date(); ?>
 												</span>
 											<?php do_action( 'indieweb_publisher_entry_title_meta', $separator = ' | ' ); ?>
-										</h3>
+										</h2>
 									<?php endif; ?>
 								</header>
 							</div>
